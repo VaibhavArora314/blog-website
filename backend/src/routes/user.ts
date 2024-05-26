@@ -23,7 +23,7 @@ userRouter.post("/signup", async (c) => {
   if (!success) {
     c.status(411);
     return c.json({
-      message: "Invalid inputs"
+      error: "Invalid inputs"
     })
   }
 
@@ -75,7 +75,7 @@ userRouter.post("/signin", async (c) => {
   if (!success) {
     c.status(411);
     return c.json({
-      message: "Invalid inputs"
+      error: "Invalid inputs"
     })
   }
 
